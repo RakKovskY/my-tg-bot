@@ -8,6 +8,9 @@ load_dotenv()
 #получаем токен из .env
 BOT_TOKEN=os.getenv('BOT_TOKEN')
 
+#получаем список администраторов
+ADMIN_IDS = [2047229244]  # замените на ваш ID Telegram
+
 #проверяем что токен загрузился
 if BOT_TOKEN is None:
     print("❌ ОШИБКА: Токен не найден в .env файле!")
